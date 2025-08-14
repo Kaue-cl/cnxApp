@@ -1,21 +1,34 @@
 @use 'primeicons/primeicons.css';
 
-:root {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
 }
 
 #toolbar {
-    padding-bottom: 15px;
+  flex: 0 0 auto; /* Não cresce, não encolhe, tamanho automático */
+  padding-bottom: 15px;
+}
+
+/* Container para menu e conteúdo */
+.main-container {
+  display: flex;
+  flex: 1; /* Ocupa todo o espaço restante */
+  overflow: hidden;
 }
 
 #menu {
-    width: 20vw;
-    height: 100vh;
+  width: 20vw;
+  flex: 0 0 auto; /* Largura fixa */
+  height: 100%; /* Altura igual ao container pai */
+  overflow-y: auto; /* Adiciona scroll se necessário */
 }
 
-
+.page-content {
+  flex: 1; /* Ocupa todo o espaço restante */
+  overflow: auto; /* Adiciona scroll se necessário */
+  padding: 1rem; /* Espaçamento interno opcional */
+}

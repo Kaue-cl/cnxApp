@@ -1,11 +1,18 @@
 <div id="toolbar">
     <p-toolbar>
-        <label>CNX APP</label>
+      <label>CNX APP</label>
+      <svg width="31" height="33" viewBox="0 0 31 33" fill="none" xmlns="http://www.w3.org/2000/svg"
+          style="width: 2rem; margin-right: 1rem">
+      </svg>
     </p-toolbar>
-</div>
-<div class="card flex justify-center" id="menu">
-    <p-menu [model]="items" />
-</div>
-<div> </div>
-<router-outlet>
-</router-outlet>
+  </div>
+  
+  <div class="main-container">
+    <div class="card flex justify-center" id="menu">
+      <p-menu [model]="items" />
+    </div>
+    
+    <div class="page-content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
