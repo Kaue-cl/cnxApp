@@ -1,1 +1,21 @@
 @use 'primeicons/primeicons.css';
+
+:root {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+#toolbar {
+    padding-bottom: 15px;
+}
+
+#menu {
+    width: 20vw;
+    height: 100vh;
+}
+
+
